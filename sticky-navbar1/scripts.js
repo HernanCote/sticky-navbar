@@ -7,7 +7,12 @@ $(function() {
     }
   });
 
+  $("a").on("click", function() {
+    $("a").removeClass("active");
+  });
+
   $("#homelink").on("click", function() {
+    $("#homelink").addClass("active");
     $("html, body")
       .stop()
       .animate(
@@ -20,7 +25,7 @@ $(function() {
   });
 
   $("#aboutlink").on("click", function() {
-    // or select the mode from jQuery easings
+    $("#aboutlink").addClass("active");
     $("html, body").animate(
       {
         scrollTop: $("#about").offset().top
@@ -31,6 +36,7 @@ $(function() {
   });
 
   $("#serviceslink").on("click", function() {
+    $("#serviceslink").addClass("active");
     // or select the mode from jQuery easings
     $("html, body").animate(
       {
@@ -42,6 +48,7 @@ $(function() {
   });
 
   $("#portfoliolink").on("click", function() {
+    $("#portfoliolink").addClass("active");
     // or select the mode from jQuery easings
     $("html, body").animate(
       {
@@ -53,6 +60,7 @@ $(function() {
   });
 
   $("#teamlink").on("click", function() {
+    $("#teamlink").addClass("active");
     // or select the mode from jQuery easings
     $("html, body").animate(
       {
@@ -64,6 +72,7 @@ $(function() {
   });
 
   $("#contactlink").on("click", function() {
+    $("#contactlink").addClass("active");
     // or select the mode from jQuery easings
     $("html, body").animate(
       {
